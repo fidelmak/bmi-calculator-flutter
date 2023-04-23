@@ -1,34 +1,29 @@
 import 'package:flutter/material.dart';
+import './homePage.dart';
+import 'forget_p.dart';
 
-void main() => runApp(BMICalculator());
+void main() => runApp(MyApp());
 
-class BMICalculator extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  static const String _title = 'Authent';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: InputPage(),
-    );
-  }
-}
-
-class InputPage extends StatefulWidget {
-  @override
-  _InputPageState createState() => _InputPageState();
-}
-
-class _InputPageState extends State<InputPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
-      ),
-      body: Center(
-        child: Text('Body Text'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+      debugShowCheckedModeBanner: false,
+      title: _title,
+      initialRoute: '/',
+      routes: routes,
+      home: Scaffold(
+        // appBar: AppBar(title: const Text(_title)),
+        body: HomePage(),
       ),
     );
   }
 }
+
+Map<String, WidgetBuilder> routes = {
+  '/HomePage': (BuildContext context) => HomePage(),
+  //'/home2': (BuildContext context) => home(),
+  '/Forget_p': (BuildContext context) => Forget_p(),
+};

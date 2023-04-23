@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061527979701",
+    "project_id": "authent-94f4c",
+    "storage_bucket": "authent-94f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061527979701:android:449b93604b5a46a302a0fc",
+        "android_client_info": {
+          "package_name": "co.appbrewery.bmicalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061527979701-uikkjema2t96p4tj78saon8md978dqis.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs5iyO_YegOVizm_gNODSHE2bY-PvhmsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061527979701-uikkjema2t96p4tj78saon8md978dqis.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
